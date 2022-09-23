@@ -12,7 +12,6 @@ Es un problema de gestión bastante común que se puede resolver con esta propue
 
 Llegados a este punto podemos pensar en la necesidad de que esta solución sea un sistema en la nube ya que nos permite compartir en tiempo real los datos entre varios usuarios, obtener estadísticas desde el servidor y aislar el procesamiento de los datos del cliente, de forma que sea más transparente.
 
-Las estadísticas que pueden ayudar a resolver el problema del reparto de tareas es la cantidad de ellas que cada integrante ha hecho, con qué frecuencia las hace y cuáles deja pendientes.
 
 ## Clientes
 
@@ -20,5 +19,5 @@ Familias, compañeros de piso, etc. que necesiten una solución para poder repar
 
 ## Lógica de Negocio
 
-Destacamos el análisis de los datos ya que se proporcionarán gráficas sobre las tareas resultas por cada integrante.
+Destacamos el desarrollo de gráficas sobre las tareas resultas por cada integrante, las pendientes y las que se han dejado sin hacer.
 Esto resuelve problemas de gestión y reparto de tareas.
