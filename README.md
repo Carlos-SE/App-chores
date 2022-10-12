@@ -24,3 +24,8 @@ La lógica de negocio consiste en un algoritmo que genere valores representando 
 
 Los valores a tener en cuenta pueden variar, desde el estilo, época, artista, colaboraciones, incluso duración.
 A esto se le puede añadir un campo de promoción según avance el desarrollo y se enfoque más a un cliente (discografías/artistas) u otro (gente que quiere descubrir música nueva).
+
+## Documentación adicional
+
+* [Historias de Usuario](./docs/HistoriasUsuario.md)
+* [Milestones](./docs/Milestones.md)
