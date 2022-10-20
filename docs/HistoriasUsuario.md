@@ -10,7 +10,7 @@ Por eso Lucía quiere usar nuestra solución, para descubrir canciones nuevas en
 
 Paco es un gran fanático del orden y le gustaría poder clasificar de manera clara y sencilla su música. De varias formas y que le permita añadir recomendaciones según el género de las listas que haga.
 
-Paco utilizaría nuestra solución para poder organizar y expandir su repertorio musical de forma más sencilla.
+Paco utilizaría nuestra solución para poder organizar (diferenciar de forma automática las canciones según el atributo de su elección) y expandir su repertorio musical de forma más sencilla.
 
 
 ##  [Manuel Lopéz](https://github.com/Carlos-SE/App-chores/issues/5)
