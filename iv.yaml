@@ -1,6 +1,6 @@
 lenguaje: Node.js
 
 entidad:
-  - /app/controllers/songController.js
+  - /app/lib/song.js
 
 
