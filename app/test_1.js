@@ -10,4 +10,4 @@ const song	= new Song('Ace of Spades', 'Motorhead', 'Ace of Spades (Expanded Edi
 console.log(song.getJson());
 console.log(('Titulo: '+song.getTitulo() + ', Artista:'+song.getArtista() 
 				+ ', Disco:'+song.getDisco() + ', Categoria:' + song.getCategoria() 
-				+ ', Duracion:' + song.getDuracion() + ', Nombre del archivo:' + song.getNombre()));
+				+ ', Duracion:' + song.getDuracion() + ', Nombre del archivo:' + song.getArchivo()));

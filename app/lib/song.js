@@ -29,8 +29,8 @@ class Song {
 		return this.duracion;
 	}
 
-	getNombre() {
-		return this.nombre;
+	getArchivo() {
+		return this.archivo;
 	}
 
 
