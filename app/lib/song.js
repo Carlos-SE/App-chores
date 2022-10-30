@@ -10,7 +10,7 @@ class Song {
 	
 
 	/**
-	* @return:	Devuelve el título de la canción
+	* @return: Devuelve el título de la canción
  	*/
 	getTitulo() {
 		return this.titulo;
@@ -49,6 +49,22 @@ class Song {
  	*/
 	getArchivo() {
 		return this.archivo;
+	}
+
+	/**
+	* @return: Json de una canción
+ 	*/
+	getJson() {
+		var song = {
+			titulo:		this.titulo,
+			artista:	this.artista,
+			disco:		this.disco,
+			categoria:	this.categoria,
+			duracion:	this.duracion,
+			archivo:	this.archivo,
+		}
+
+		return song;
 	}
 }
 
