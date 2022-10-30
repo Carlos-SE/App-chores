@@ -1,6 +1,2 @@
 lenguaje: Node.js
 
-entidad:
-  - /app/lib/song.js
-
-
