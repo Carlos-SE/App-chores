@@ -1,0 +1,14 @@
+
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+	"start": "node app.js",
+    "test": "node test_1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNUGPLv3"
+}
