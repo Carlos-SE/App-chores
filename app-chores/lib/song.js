@@ -51,6 +51,22 @@ class Song {
 		return this.archivo;
 	}
 
+
+	/**
+	* @return: Json que contiene los atributos
+ 	*/
+	getJson() {
+		var song = {
+			titulo:		this.titulo,
+			artista:	this.artista,
+			disco:		this.disco,
+			categoria:	this.categoria,
+			duracion:	this.duracion,
+			archivo:	this.archivo,
+		}
+
+		return song;
+	}
 }
 
 module.exports = Song 
