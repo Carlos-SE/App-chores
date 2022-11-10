@@ -3,3 +3,4 @@ lenguaje: Node.js
 entidad:
   - /app-chores/lib/song.js
   - /app-chores/lib/featuring.js
+  - /app-chores/lib/genre.js
