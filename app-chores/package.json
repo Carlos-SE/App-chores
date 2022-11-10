@@ -1,0 +1,14 @@
+
+{
+  "name": "app-chores",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+	"start": "node app.js",
+    "test": "test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNUGPLv3"
+}
