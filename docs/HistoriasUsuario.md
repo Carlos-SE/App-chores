@@ -14,7 +14,7 @@ Paco utilizaría nuestra solución para poder organizar (diferenciar de forma au
 
 
 ##  [Manuel Lopéz](https://github.com/Carlos-SE/App-chores/issues/5)
-Manuel es un desarrolador que usa herramientas para hacer `web scraping` continuamente. Le gustaría poder obtener de una forma sencilla los atributos de las canciones para poder trabajar con esos datos en sus proyectos personales.
+Manuel es carpintero y le gusta escuchar música durante el trabajo. Suele buscar artistas que han colaborado con los que escucha asiduamente y cuanto más hayan colaborado más le interesa.
 
-Por eso, Manuel, utilizaría nuestra aplicación. Esta le ayudaría a obtener las datos de las canciones de una forma sencilla e intuitiva.
+Por eso usaría la aplicación, para descubrir canciones de nuevos artistas que hayan colaborado con sus artistas favoritos.
 
