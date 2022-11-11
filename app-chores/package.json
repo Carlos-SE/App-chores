@@ -3,10 +3,10 @@
   "name": "app-chores",
   "version": "0.0.1",
   "description": "",
-  "main": "app.js",
+  "main": "",
   "scripts": {
-	"start": "node app.js",
-    "test": "test.js"
+	"start": "",
+    "test": ""
   },
   "keywords": [],
   "author": "",
