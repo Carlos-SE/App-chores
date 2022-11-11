@@ -1,8 +1,6 @@
 class Featuring {
-	constructor(principal, colaboradores, cancion) {
-		this.principal 		= principal;
+	constructor(colaboradores) {
 		this.colaboradores	= colaboradores;
-		this.cancion		= cancion;
 	}
 
 }
