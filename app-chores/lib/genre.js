@@ -1,9 +1,9 @@
 
-class Genre {
-	constructor(genero) {
-		this.genero		= genero;
+class GenreList {
+	constructor(generos) {
+		this.generos	= generos;
 	}
 
 }
 
-module.exports = Genre;
+module.exports = GenreList;
