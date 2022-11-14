@@ -1,6 +1,6 @@
 lenguaje: Node.js
 
 entidad:
-  - app-chores/services/song.js
-  - app-chores/services/featuring.js
-  - app-chores/services/genre.js
+  - lib/song.js
+  - lib/featuring.js
+  - lib/genre.js
