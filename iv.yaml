@@ -3,4 +3,4 @@ lenguaje: Node.js
 entidad:
   - lib/song.js
   - lib/featuring.js
-  - lib/genre.js
+  - lib/genreList.js
