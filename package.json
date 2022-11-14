@@ -1,0 +1,14 @@
+
+{
+  "name": "app-chores",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+	"start": "",
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNUGPLv3"
+}
