@@ -2,10 +2,6 @@ class Song {
 	constructor(titulo, interpretes, disco, genero, duracion, archivo) {
 		this.titulo			= titulo;
 		this.interpretes	= this.interpretes;
-		this.genero			= genero; 
-		this.disco			= disco;
-		this.duracion		= duracion;
-		this.archivo		= archivo;
 	}
 
 
