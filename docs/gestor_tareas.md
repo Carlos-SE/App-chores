@@ -3,8 +3,8 @@
 
 ## Aspectos a tener en cuenta
 
-*  Facilidad de uso
-*  Comunidad
+* Facilidad de uso
+* Comunidad
 * Mantenimiento (Freshness)
 * Velocidad
 * Funcionalidad
@@ -42,7 +42,7 @@ Grunt es otro gestor de tareas, del que podemos destacar las siguientes caracter
 #### Inconvenientes:
 
 * Lento
-* Utiliza `plugins`
+* Necesita `plugins`
 
 ### Yarn
 
