@@ -71,3 +71,9 @@ No es posible hablar de gestores de tareas y no mencionar al gestor `make`. Llev
 * Tiene una comunidad mucho más grande que las demás alternativas
 * Es el que tiene mejor mantenimiento (`Freshness`)
 * Permite ejecutar comandos propios del sistema operativo de forma muy simple
+
+
+
+## Decisión
+
+Tras todo lo comentado, destaca `make` por encima del resto y es la opción que mejor rendimiento puede dar en este proyecto.
