@@ -32,3 +32,9 @@ pnpm es estricto en cuanto al acceso de dependencias, únicamente accediendo a l
 
 Es monorepo, aunque en un principio no es el objetivo de este proyecto, pero es un atributo a valorar.
 
+
+## Decisión final
+
+Después de ver estas alternativas, la duda está entre `yarn` y `pnpm`. Al tener una velocidad similar, este no será un factor decisivo, así que nos centraremos en las demás características.
+
+La seguridad que brinda Yarn es mejor que la de pnpm y la ventaja que pnpm tiene para evitar la redundancia de ficheros de las librerias, no es tan importante ya que en principio este proyecto va a ser de un único módulo y no se va a aprovechar esa ventaja.
