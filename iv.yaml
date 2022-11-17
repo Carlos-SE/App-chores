@@ -4,3 +4,7 @@ entidad:
   - lib/song.js
   - lib/featuring.js
   - lib/genreList.js
+
+automatizar:
+  fichero: Makefile
+  orden: make
