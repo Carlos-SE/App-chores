@@ -1,0 +1,6 @@
+lenguaje: Node.js
+
+entidad:
+  - lib/song.js
+  - lib/featuring.js
+  - lib/genreList.js
