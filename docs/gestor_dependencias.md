@@ -1,7 +1,6 @@
 # Elección del gestor de dependencias
 
-Es una decisión primordial, ya que un gestor de dependencias adecuado nos permitirá un desarrollo lo más optimizado. Las opciones principales que se han investigado son:
-
+Es una decisión primordial, ya que un gestor de dependencias adecuado nos permitirá un desarrollo lo más optimizado.
 #### Aspectos a tener en cuenta:
 
 *  Facilidad de uso
@@ -11,6 +10,7 @@ Es una decisión primordial, ya que un gestor de dependencias adecuado nos permi
 * Funcionalidad
 * Seguridad
       
+Las opciones principales que se han investigado son:
 
 ## npm
 
