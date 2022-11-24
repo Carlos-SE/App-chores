@@ -3,36 +3,30 @@
 Es una decisión primordial, ya que un gestor de dependencias adecuado nos permitirá un desarrollo lo más optimizado.
 #### Aspectos a tener en cuenta:
 
-*  Facilidad de uso
 *  Comunidad
 * Mantenimiento (Freshness)
 * Velocidad
-* Funcionalidad
       
 Las opciones principales que se han investigado son:
 
-## npm
+## NPM
 
-- Gestor por defecto y más usado (mayor comunidad, y facilidad de uso por ser simple y estar bien documentado).
+- Gestor por defecto y más usado (mayor comunidad, enfoque simple y estar bien documentado).
 - Actualizaciones constantes.
-- Errores con la compatibilidad entre versiones. No es determinista y permite que distintas versiones de paquetes se usen en distintas máquinas.
 - Funcionalidad básica de gestor de dependencias.
 - No destaca su velocidad
 
-## Yarn
+## YARN
 
 - Tiene una comunidad muy activa y en su github tienen muchos `issues` con los que se pueden solventar errores y problemas frecuentes.
-- Se mantiene de forma continua, garantizando de momento unas condiciones fiables.
+- Se mantiene de forma continua (`release` reciente y con nuevos commits en la rama principal de desarrollo), garantizando de momento unas condiciones fiables.
 - Muy veloz y seguro (se hizo pensando en estas características)
-- Arregla los principales errores y fallos que se daban en `npm`
-- Funcionalidad básica y añadidos como la garantía de instalación de las mismas versiones en distintas máquinas y eliminación de versiones que no corresponden
 
-## pnpm
+## PNPM
 
 - Comunidad grande, cuenta con muchos foros, guías y tutoriales
 - Muy veloz, iguala a `yarn` en este aspecto, llegando a superarlo en algunas situaciones según sus desarrolladoes.
 - Mantenimiento constante.
-- Funcionalidades básicas y añadidos como optimización de uso de disco y posibilidad de `monorepo`
 
 
 ## Decisión final
