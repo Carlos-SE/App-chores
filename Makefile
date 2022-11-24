@@ -16,7 +16,7 @@ header :
 	@echo Running Infinite-playlist makefile.
 
 
-check: $(DIR)/*
+check:
 	@echo Ejecutando la verificación de los archivos.
 	@echo
 	@for file in $^; do\
