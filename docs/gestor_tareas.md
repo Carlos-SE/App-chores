@@ -8,7 +8,6 @@
 * Mantenimiento (Freshness)
 * Velocidad
 * Funcionalidad
-* Seguridad
 
 ## Opciones consideradas
 
