@@ -17,7 +17,7 @@ header :
 
 
 check: $(DIR)/*
-	@echo Ejecutando la verificación de los arcvhios.
+	@echo Ejecutando la verificación de los archivos.
 	@echo
 	@for file in $^; do\
 		echo Analizando fichero $$file;\
