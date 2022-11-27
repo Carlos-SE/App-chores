@@ -1,5 +1,4 @@
 # Elección del gestor de tareas
-> Los gestores de tareas o task runners son herramientas que falicitan la automatización de tareas. Para escoger el gestor de tareas, tenemos que hacer una selección entre varias alternativas.
 
 ## Aspectos a tener en cuenta
 
