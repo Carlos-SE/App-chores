@@ -6,7 +6,7 @@
 
 # Directorio con los archivos fuente.
 DIR:=./lib/
-files=$(shell ls $(DIR)/*.js)
+files=$(wildcard $(DIR)/*.js)
 
 
 all : header check
