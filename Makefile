@@ -5,7 +5,7 @@
 ################################################################################
 
 # Directorio con los archivos fuente.
-DIR=./lib/
+DIR:=./lib/
 files=$(shell ls $(DIR)/*.js)
 
 
