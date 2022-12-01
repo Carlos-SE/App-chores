@@ -6,7 +6,6 @@
 * Comunidad
 * Mantenimiento (Freshness)
 * Velocidad
-* Funcionalidad
 
 ## Opciones consideradas
 
@@ -22,7 +21,6 @@ Gulp es un conjunto de herramientas que ayudar a automatizar el flujo de trabajo
 
 #### Inconvenientes:
 
-* Necesita `plugins`
 * Llevan más de un año sin actualizar la rama principal en [su repositorio](https://github.com/gulpjs/gulp)
 
 ### Grunt
@@ -41,21 +39,6 @@ Grunt es otro gestor de tareas, del que podemos destacar las siguientes caracter
 
 * Lento
 * Necesita `plugins`
-
-### Yarn
-
-Yarn destaca por su reputación en cuanto a seguridad y rapidez. ¿Cuáles son sus ventajas y desventajas?
-
-#### Ventajas
-
-* Yarn puede ejecutar las tareas de forma paralela para que sea más rápido y eficiente.
-* Yarn también incluye un instalador de paquetes de `NodeJS` (`npm`) y mejora la funcionalidad del mismo.
-* Es muy seguro, es uno de sus aspectos principales
-
-#### Inconvenientes
-
-* No optimiza el uso de memoria, tiene archivos `lock` que hacen que sea muy seguro a coste de aumentar el peso del proyecto.
-
 
 ### Make
 
