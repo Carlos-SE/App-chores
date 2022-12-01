@@ -6,7 +6,7 @@
 
 # Directorio con los archivos fuente.
 DIR=./lib/
-files=$(shell ls $(DIR)/*)
+files=$(shell ls $(DIR)/*.js)
 
 
 all : header check
@@ -19,8 +19,4 @@ header :
 check:
 	@echo Ejecutando la verificación de los archivos.
 	@echo
-	@for file in $^; do\
-		echo Analizando fichero $$file;\
-		node --check $$file;\
-		echo;\
-	done
+	$(foreach file, $(files), node --check $(file);)
