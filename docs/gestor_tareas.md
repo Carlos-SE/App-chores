@@ -2,8 +2,7 @@
 
 ## Aspectos a tener en cuenta
 
-* Facilidad de uso
-* Comunidad
+* Documentación
 * Mantenimiento (Freshness)
 * Velocidad
 
@@ -40,7 +39,7 @@ No es posible hablar de gestores de tareas y no mencionar al gestor `make`. Llev
 
 * Tiene su propio `DSL`, con el cual se pueden comprobar condicionales, hacer bucles, declarar variables, etc. 
 * Es bastante rápido
-* Tiene una comunidad mucho más grande que las demás alternativas
+* Tiene una documentación muy detallada y extensa, desde el propuo manual hasta foros y guías incontables.
 * Es el que tiene mejor mantenimiento (`Freshness`)
 * Permite ejecutar comandos propios del sistema operativo de forma muy simple
 
