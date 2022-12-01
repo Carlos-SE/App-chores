@@ -13,14 +13,13 @@ Las opciones principales que se han investigado son:
 
 - Gestor por defecto y más usado (enfoque simple y estar bien documentado).
 - Actualizaciones constantes.
-- Funcionalidad básica de gestor de dependencias.
 - No destaca su velocidad
 
 ## Yarn
 
-- Hay una gran cantidad de foros y de documentación, además,  en su github tienen muchos `issues` con los que se pueden solventar errores y problemas frecuentes.
+- Hay una gran cantidad de foros y de documentación, además,  en su github tienen muchos `issues` (resueltos) con los que se pueden solventar errores y problemas frecuentes.
 - Se mantiene de forma continua (`release` reciente y con nuevos commits en la rama principal de desarrollo), garantizando de momento unas condiciones fiables.
-- Muy veloz y seguro (se hizo pensando en estas características)
+- Velocidad considerable (no supone un problema).
 
 ## PNPM
 
