@@ -2,17 +2,19 @@
   "name": "app-chores",
   "version": "0.0.9",
   "description": "Proyecto para la asignatura Infraestructura Virtual",
-
   "scripts": {
-	"test": "cypress run",
-	"cypress:open": "cypress open"
+    "test": "cypress run",
+    "cypress:open": "cypress open"
   },
-
   "author": "Carlos-SE",
   "license": "GNUGPLv3",
   "repository": "git@github.com:Carlos-SE/App-chores.git",
-
   "devDependencies": {
+    "@angular-devkit/build-angular": "^15.0.5",
+    "@angular/cli": "^15.0.5",
+    "@angular/common": "^15.0.4",
+    "@angular/core": "^15.0.4",
+    "@angular/platform-browser-dynamic": "^15.0.4",
     "cypress": "^12.3.0"
   }
 }
