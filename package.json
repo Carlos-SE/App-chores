@@ -1,14 +1,18 @@
-
 {
   "name": "app-chores",
-  "version": "0.0.1",
-  "description": "",
-  "main": "",
+  "version": "0.0.9",
+  "description": "Proyecto para la asignatura Infraestructura Virtual",
+
   "scripts": {
-	"start": "",
-    "test": ""
+	"test": "cypress run",
+	"cypress:open": "cypress open"
   },
-  "keywords": [],
-  "author": "",
-  "license": "GNUGPLv3"
+
+  "author": "Carlos-SE",
+  "license": "GNUGPLv3",
+  "repository": "git@github.com:Carlos-SE/App-chores.git",
+
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
 }
