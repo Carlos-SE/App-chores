@@ -32,6 +32,14 @@ Se debe ejecutar el comando
 make check
 ```
 
+## Test-runner
+Se ha elegido `Cypress`, la toma de decisión documentada se puede ver en [este fichero](./docs/test_runners.md).
+
+Para instalar dicho módulo, podemos ejecutar el siguiente comando
+```
+yarn add cypress --dev
+```
+
 ## Documentación adicional
 
 * [Historias de Usuario](./docs/HistoriasUsuario.md)
