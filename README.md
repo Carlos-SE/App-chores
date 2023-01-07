@@ -35,10 +35,13 @@ make check
 ## Test-runner
 Se ha elegido `Cypress`, la toma de decisión documentada se puede ver en [este fichero](./docs/test_runners.md).
 
-Para instalar dicho módulo, podemos ejecutar el siguiente comando
+Para instalar dicho módulo, podemos ejecutar los siguientes comandos
 ```
 yarn add cypress --dev
+yarn cypress:open
 ```
+
+Una vez tengamos esto ya podremos lanzar los `test`, ya sea desde consola con el comando `yarn test` o desde el navegador web con el servidor que `Cypress` nos facilita con el comando `yarn cypress:open`.
 
 ## Documentación adicional
 
