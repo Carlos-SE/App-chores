@@ -9,3 +9,5 @@ entidad:
 automatizar:
   fichero: Makefile
   orden: make
+
+test: cypress/e2e/tests/spec.cy.js
