@@ -41,7 +41,7 @@ yarn add cypress --dev
 yarn cypress:open
 ```
 
-Una vez tengamos esto ya podremos lanzar los `test`, ya sea desde consola con el comando `yarn test` o desde el navegador web con el servidor que `Cypress` nos facilita con el comando `yarn cypress:open`.
+Una vez tengamos esto ya podremos lanzar los `test`, ya sea desde consola con el comando `yarn test` o desde el navegador web con el servidor que `Cypress` nos facilita con el comando `yarn cypress:open`. También se incluye dentro del fichero `Makefile` un comando para lanzar los tests: `make test`
 
 ## Documentación adicional
 

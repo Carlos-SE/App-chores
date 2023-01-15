@@ -20,3 +20,6 @@ check:
 	@echo Ejecutando la verificación de los archivos.
 	@echo
 	$(foreach file, $(files), node --check $(file);)
+
+test:
+	@yarn test
