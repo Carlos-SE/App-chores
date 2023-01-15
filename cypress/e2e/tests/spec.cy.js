@@ -2,9 +2,33 @@ const Featuring = require("../../../lib/featuring");
 const GenreList = require('../../../lib/genreList');
 const Song = require('../../../lib/song');
 const Playlist = require('../../../lib/playlist');
+const { reflectComponentType } = require("@angular/core");
+
+function recommendSong(playlist, song){
+  const genresWeight = 75;
+  const featWeight = 50;
+
+  let sortedGenres = playlist.getSortedGenres();
+
+    let likely = 0;
+    let playlistLength = playlist.songs.length;
+    for (let genrePair of sortedGenres) {
+      let genre = genrePair[0];
+      if (song.genre === genre) {
+        likely += genrePair[1]/playlistLength * genresWeight;
+      }
+    }
+
+    if (playlist.hasFeaturing(song.interpretes)){
+      likely += featWeight;
+    }
+
+    return likely;
+}
 
 describe('Song recommendation', () => {
   it('Test song recommendation', () => {
+
     let songs = [];
     let song1 = new Song("Feo Fuerte y Formal", "Loquillo Y Los Trogloditas", "Rock");
     let song2 = new Song("Venezia", "Hombres G", "Pop-Rock");
@@ -15,30 +39,18 @@ describe('Song recommendation', () => {
 
     let suggestedSong = new Song("Antes de que cuente diez", "Fito y Fitipaldis", "Rock");
 
-    let aux = new Playlist("test", []);
     let playlist = new Playlist("Fav songs", songs);
-    let sortedGenres = playlist.getSortedGenres();
+    
+    let likely = recommendSong(playlist, suggestedSong);
 
-    let likely = 0;
-    for (let genrePair of sortedGenres) {
-      let genre = genrePair[0];
-      if (suggestedSong.genre === genre) {
-        likely += 5 * genrePair[1];
-      }
-    }
-
-    for (let song of playlist.songs){
-      if (typeof song.interpretes !== 'string'){
-        for (let artist of song.interpretes.colaboradores){
-          if (playlist.getSortedGenres(artist, suggestedSong.interpretes)){
-            likely += 50;
-          }
-        }
-      }
-    }
-
-
+    // Es una buena sugerencia
     expect(likely >= 50).to.eq(true);
+    
+    suggestedSong = new Song("Limbo", "Daddy Yankee", "Reggaeton");
+    likely = recommendSong(playlist, suggestedSong);
+
+    // Es una mala sugerencia
+    expect(likely < 50).to.eq(true);
 
   })
 })
