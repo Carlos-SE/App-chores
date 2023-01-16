@@ -3,8 +3,8 @@
   "version": "0.0.9",
   "description": "Proyecto para la asignatura Infraestructura Virtual",
   "scripts": {
-    "test": "cypress run",
-    "cypress:open": "cypress open"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Carlos-SE",
   "license": "GNUGPLv3",
