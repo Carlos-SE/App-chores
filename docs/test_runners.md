@@ -37,4 +37,6 @@ Así que todas las opciones que se tendrán en cuentra cumplirán como mínimo c
 
 ## Elección
 
-Tras analizar las distintas opciones, se va a escoger `Cypress` para los test de esta aplicación. Esto se debe a su masivo crecimiento, escalabilidad y facilidad de uso.
+Tras haber probado las tres opciones, comprobamos que Cypress es un `test runner` de tipo `e2e` y crea todo un servidor web para ejecutar las pruebas, haciendo que sea ineficiente y que carezca de sentido su uso. También nos llama la atención el funcionamiento de `Jest`, por ser más rápido, por la calidad de su manual, facilidad de uso y por incluir ya la libreria de aserciones.
+
+Debido a lo expuesto la decisión será utilizar `Jest`.
