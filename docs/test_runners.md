@@ -9,7 +9,7 @@ Es de principal importancia que la decisión se tome teniendo en cuenta los prin
 * Self-validating
 * Timely
 
-Así que todas las opciones que se tendrán en cuentra cumplirán como mínimo con estás características.
+Así que todas las opciones que se tendrán en cuenta cumplirán como mínimo con estás características.
 
 ## Opciones
 > Tras leer en varios foros y teniendo en cuenta las características del modelo, las siguientes son las opciones que tendremos en cosideración pese a que haya muchas alternativas más.
