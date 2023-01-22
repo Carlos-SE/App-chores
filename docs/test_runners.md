@@ -14,29 +14,22 @@ Así que todas las opciones que se tendrán en cuenta cumplirán como mínimo co
 ## Opciones
 > Tras leer en varios foros y teniendo en cuenta las características del modelo, las siguientes son las opciones que tendremos en cosideración pese a que haya muchas alternativas más.
 
-### Cypress
-* Es asíncrono, lo que aumenta la velocidad
-* Tiene una librería de aserciones muy popular ya incluida, llamada [Chai](https://docs.cypress.io/guides/references/assertions#Chai)
-* Esta basado sobre **Mocha**
-* Sencillo de aprender
-* Puntuación muy alta en [snyk](https://snyk.io/advisor/npm-package/cypress), con `95/100`
-
 ### Mocha
-* Asíncrono
-* Es sencillo de utilizar
-* Soporta todos los navegadores más utilizados
-* Soporte para muchas librerias de aserciones (No tiene una propia incluida)
-* Puntuación muy alta en [snyk](https://snyk.io/advisor/npm-package/mocha), con `95/100`
+* `Fast`: Mocha es un test runner rápido, ya que no tiene una gran cantidad de características adicionales que podrían ralentizar su ejecución.
+* `Independent`: Mocha permite ejecutar pruebas de manera independiente, lo que significa que las pruebas no dependen entre sí. Esto permite ejecutar pruebas individuales y obtener resultados precisos.
+* `Repeatable`: Mocha permite configurar las pruebas de manera que se puedan repetir varias veces y obtener resultados consistentes.
+* `Self-validating`: Mocha proporciona una interfaz fácil de usar para escribir pruebas automatizadas que son auto-validables.
+* `Timely`: Mocha tiene soporte para ejecutar pruebas en paralelo, lo que permite ejecutar pruebas de manera oportuna y reducir el tiempo de espera.
 
 ### Jest
-* Es el más popular de las opciones a tener en cuenta
-* Es asíncrono
-* Buena documentación
-* Puede requerir multiples dependencias durante el proceso de configuración incial
-* Puntuación muy alta en [snyk](https://snyk.io/advisor/npm-package/jest), con `95/100`
+* `Fast`: Jest es otro test runner rápido, ya que utiliza caché de módulos y otras técnicas para acelerar la ejecución de pruebas.
+* `Independent`: Jest también permite ejecutar pruebas de manera independiente, lo que significa que las pruebas no dependen entre sí. Esto permite ejecutar pruebas individuales y obtener resultados precisos.
+* `Repeatable`: Jest proporciona una interfaz intuitiva para configurar y ejecutar pruebas, lo que garantiza que las pruebas sean repetibles.
+* `Self-validating`: Jest incluye una variedad de matchers (coincidencias) incorporados que se pueden utilizar para escribir pruebas auto-validables.
+* `Timely`: Jest permite ejecutar pruebas en paralelo mediante la opción --runInBand, lo que permite ejecutar pruebas de manera oportuna y reducir el tiempo de espera.
 
 ## Elección
 
-Tras haber probado las tres opciones, comprobamos que Cypress es un `test runner` de tipo `e2e` y crea todo un servidor web para ejecutar las pruebas, haciendo que sea ineficiente y que carezca de sentido su uso. También nos llama la atención el funcionamiento de `Jest`, por ser más rápido, por la calidad de su manual, facilidad de uso y por incluir ya la libreria de aserciones.
+Tras haber probado las dos opciones, nos llama la atención el funcionamiento de `Jest`, por ser más rápido, por la calidad de su manual, facilidad de uso y por incluir ya la libreria de aserciones.
 
 Debido a lo expuesto la decisión será utilizar `Jest`.
