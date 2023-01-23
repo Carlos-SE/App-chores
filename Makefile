@@ -23,3 +23,6 @@ check:
 
 test:
 	@yarn test
+
+install:
+	@npm install --global yarn

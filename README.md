@@ -33,6 +33,11 @@ make check
 ```
 
 ## Test-runner
+Como se ha escogido `yarn` como gestor de dependencias, se tendrá que instalar antes de poder ejecutar el comando anterior. Para instalar este gestor de dependencias, podemos hacerlo con el comando:
+```
+make install
+```
+
 Se ha elegido `Jest`, la toma de decisión documentada se puede ver en [este fichero](./docs/test_runners.md).
 
 Para instalar dicho módulo, podemos ejecutar los siguientes comandos
@@ -40,10 +45,6 @@ Para instalar dicho módulo, podemos ejecutar los siguientes comandos
 yarn add --dev jest
 ```
 
-Como se ha escogido `yarn` como gestor de dependencias, se tendrá que instalar antes de poder ejecutar el comando anterior. Para instalar este gestor de dependencias, podemos hacerlo con el comando:
-```
-npm install --global yarn
-```
 
 Una vez tengamos esto ya podremos lanzar los `test`, ya sea desde consola con el comando `yarn test`. También se incluye dentro del fichero `Makefile` un comando para lanzar los tests: `make test`.
 
