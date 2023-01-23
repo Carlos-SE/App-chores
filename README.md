@@ -40,11 +40,6 @@ make install
 
 Se ha elegido `Jest`, la toma de decisión documentada se puede ver en [este fichero](./docs/test_runners.md).
 
-Para instalar dicho módulo, podemos ejecutar los siguientes comandos
-```
-yarn add --dev jest
-```
-
 
 Una vez tengamos esto ya podremos lanzar los `test`, ya sea desde consola con el comando `yarn test`. También se incluye dentro del fichero `Makefile` un comando para lanzar los tests: `make test`.
 
