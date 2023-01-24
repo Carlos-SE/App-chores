@@ -15,7 +15,7 @@ test('Create a playlist and two separe songs to see if they are a good recommend
 
     let suggestedSong = new Song("Antes de que cuente diez", "Fito y Fitipaldis", "Rock");
 
-    let playlist = new Playlist("Fav songs", songs);
+    let playlist = new Playlist(songs);
     
     let likely = recommendSong(playlist, suggestedSong);
 
