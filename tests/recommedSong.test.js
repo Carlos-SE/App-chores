@@ -20,7 +20,7 @@ test('Create a playlist and two separe songs to see if they are a good recommend
     let likely = recommendSong(playlist, suggestedSong);
 
     // Es una buena sugerencia
-    //expect(likely).toBe(true);
+    expect(likely).toBe(true);
     
     suggestedSong = new Song("Limbo", "Daddy Yankee", "Reggaeton");
     likely = recommendSong(playlist, suggestedSong);
