@@ -2,19 +2,29 @@
 > Objetivo 4
 
 ## Criterios
-Facilidad de uso, facilidad de instalación, velocidad.
+Facilidad de instalación, velocidad.
 
 ## Opciones
 > Tras leer en varios foros y teniendo en cuenta las características del modelo, las siguientes son las opciones que tendremos en consideración pese a que haya muchas alternativas más.
 
 ### Mocha
-* Fácil de usar, hay muchas dudas resueltas en foros y extensa documentación.
+* Hay muchas dudas resueltas en foros y extensa documentación.
 * Fácil de instalar, pero no incluye una librería de aserciones, por lo que habría que instalarla aparte.
 * Es muy rápido, además de asíncrono.
 
 ### Jest
-* Fácil de usar, hay mucha documentación online y su manual es muy completo.
+* Hay mucha documentación online y su manual es muy completo.
 * Fácil de instalar, además, incluye una librería de aserciones.
+* Es rápido y asíncrono como en el caso anterior.
+
+### Jasmine
+* Hay mucha documentación online y muchas dudas resueltas por la comunidad (esto tiene relación con que tiene más tiempo).
+* Fácil de instalar y ajustar, pero la libreria de aserciones que incluye no es tan completa como `Chai`.
+* Es menos rápido ya que no soporta ejecución paralela.
+
+### Ava
+* Hay menos documentación online y menos dudas resueltas porque no está tan extendido.
+* Fácil de instalar y tiene su propia librería de aserciones `ava-assert`.
 * Es rápido y asíncrono como en el caso anterior.
 
 ## Elección
