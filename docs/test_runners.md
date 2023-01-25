@@ -5,7 +5,7 @@
 Facilidad de uso, facilidad de instalación, velocidad.
 
 ## Opciones
-> Tras leer en varios foros y teniendo en cuenta las características del modelo, las siguientes son las opciones que tendremos en cosideración pese a que haya muchas alternativas más.
+> Tras leer en varios foros y teniendo en cuenta las características del modelo, las siguientes son las opciones que tendremos en consideración pese a que haya muchas alternativas más.
 
 ### Mocha
 * Fácil de usar, hay muchas dudas resueltas en foros y extensa documentación.
