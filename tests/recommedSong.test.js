@@ -24,5 +24,8 @@ test('Create a playlist and two separe songs to see if they are a good recommend
     let recommended = recommendSong(playlist, suggestedSongs);
 
     expect(recommended.includes(suggestedSong1)).toBe(true);
+    expect(recommended.includes(suggestedSong2)).toBe(false);
+    expect(recommended.includes(suggestedSong3)).toBe(false);
+    expect(recommended.includes(suggestedSong4)).toBe(false);
     
 })
