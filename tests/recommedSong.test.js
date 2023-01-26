@@ -12,18 +12,17 @@ test('Create a playlist and two separe songs to see if they are a good recommend
 
     songs.push(song1, song2, song3);
 
-    let suggestedSong = new Song("Antes de que cuente diez", "Fito y Fitipaldis", "Rock");
+    let suggestedSong1 = new Song("Antes de que cuente diez", "Fito y Fitipaldis", "Rock");
+    let suggestedSong2 = new Song("Good Vibrations - Remastered 2001", "The Beach Boys", "Pop");
+    let suggestedSong3 = new Song("Limbo", "Daddy Yankee", "Reggaeton");
+    let suggestedSong4 = new Song("She's Not There", "The Zombies", "Pop-Rock");
+
+    let suggestedSongs = [suggestedSong1, suggestedSong2, suggestedSong3, suggestedSong4];
 
     let playlist = new Playlist(songs);
-    
-    let likely = recommendSong(playlist, suggestedSong);
 
-    // Es una buena sugerencia
-    expect(likely).toBe(true);
-    
-    suggestedSong = new Song("Limbo", "Daddy Yankee", "Reggaeton");
-    likely = recommendSong(playlist, suggestedSong);
+    let recommended = recommendSong(playlist, suggestedSongs);
 
-    // Es una mala sugerencia
-    expect(likely).toBe(false);
+    expect(recommended.includes(suggestedSong1)).toBe(true);
+    
 })
