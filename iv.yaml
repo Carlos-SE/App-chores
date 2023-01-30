@@ -3,7 +3,6 @@ lenguaje: Node.js
 entidad:
   - lib/song.js
   - lib/featuring.js
-  - lib/genreList.js
   - lib/playlist.js
 
 automatizar:
