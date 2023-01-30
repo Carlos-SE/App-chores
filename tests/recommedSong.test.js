@@ -23,7 +23,7 @@ test('Create a playlist and two separe songs to see if they are a good recommend
 
     let playlist = new Playlist(songs);
 
-    recommendSong(playlist, allSongs);
+    recommendSong(playlist, allSongs, 3);
 
     expect(playlist.songs.includes(song4)).toBe(true);
     expect(playlist.songs.includes(song5)).toBe(false);
