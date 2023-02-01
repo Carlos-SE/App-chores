@@ -41,4 +41,8 @@ Destacaremos `frameworks` centrados en *BDD* (Behavior Driven Development). Esto
 
 ## Elección
 
-De entre las opciones vistas destacan `Jest`, `Mocha`, `Jasmine` y `Chai` por ser los más populares. Esto hace que exista mucho contenido y problemas resueltos sobre estas alternativas en foros, lo cual es positivo para poder resolver futuros problemas derivados del test runner seleccionado.
+De entre las opciones vistas destacan `Jest`, `Mocha`, `Jasmine` y `Chai` por ser las más populares. Esto hace que exista mucho contenido y problemas resueltos sobre estas alternativas en foros, lo cual es positivo para poder resolver futuros problemas derivados del test runner seleccionado.
+
+`Jest` es el más popular de acuerdo a varios foros desde el año 2017. Este se basaba en `Jasmine` pero mejoraron muchas funcionalidades e incluyeron nuevas. También está preparado para usar sin tener que configurarlo, esto lo hace mucho más versatil que las demás alternativas. Además, al igual que `Jasmine`, no necesita que añadan `require`en los tests para que estos funcionen correctamente, ya que se hace de forma global con los tests. Este test runner se considera el más rápido para grandes proyectos con muchos archivos debido a su forma de implementar paralelismo en sus pruebas.
+
+Por todas estas características, `Jest` es el que más nos ha llamado la atención. Destancando su portabilidad ya que no necesita configuración inicial y su expléndido mantenimiento de la mano de *Facebook*.
