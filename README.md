@@ -50,9 +50,9 @@ Se debe ejecutar el comando
 make check
 ```
 
-## Elección y funcionamiento del test-runner
+## Elección y funcionamiento del test-runner y la biblioteca de aserciones
 
-Se ha elegido `Jest` entre varias alternativas para cumplir esta función, la toma de decisión documentada se puede ver en [este fichero](./docs/test_runners.md).
+Se ha elegido `Mocha` como test runner entre varias alternativas para cumplir esta función, la toma de decisión documentada se puede ver en [este fichero](./docs/test_runners.md). Para complementarlo, se ha escogido `Chai` como biblioteca de aserciones, se puede comprobar el motivo de su eleccioń en [este fichero](./docs/assert.md).
 
 
 Una vez tengamos esto ya podremos lanzar los `test`, desde consola con el comando `yarn test`. También se incluye dentro del fichero `Makefile` un comando para lanzar los tests: `make test`. Para poder hacer esto, hace falta tener instalados correctamente los gestores vistos en secciones anteriores a esta.
