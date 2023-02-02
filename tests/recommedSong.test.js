@@ -25,11 +25,11 @@ test('Create a playlist and two separe songs to see if they are a good recommend
 
     recommendSong(playlist, allSongs, 2);
 
-    expect(playlist.songs.includes(song4)).toBe(true);
-    expect(playlist.songs.includes(song5)).toBe(false);
-    expect(playlist.songs.includes(song6)).toBe(false);
-    expect(playlist.songs.includes(song7)).toBe(false);
-    expect(playlist.songs.includes(song8)).toBe(true);
-    expect(playlist.songs.includes(song9)).toBe(false);
+    expect(playlist.songs).toContain(song4);
+    expect(playlist.songs).not.toContain(song5);
+    expect(playlist.songs).not.toContain(song6);
+    expect(playlist.songs).not.toContain(song7);
+    expect(playlist.songs).toContain(song8);
+    expect(playlist.songs).not.toContain(song9);
     
 })
