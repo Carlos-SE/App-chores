@@ -1,4 +1,4 @@
-const assert = require('chai').assert;
+const expect = require('chai').expect;
 const Song = require('../lib/song')
 const Playlist = require('../lib/playlist')
 const recommendSong = require('../lib/functions')
@@ -25,11 +25,11 @@ describe('Crear una playlist con canciones de todo el conjunto que haya almacena
 
     recommendSong(playlist, allSongs, 2);
 
-    assert.include(playlist.songs, song4);
-    assert.notInclude(playlist.songs, song5);
-    assert.notInclude(playlist.songs, song6);
-    assert.notInclude(playlist.songs, song7);
-    assert.include(playlist.songs, song8);
-    assert.notInclude(playlist.songs, song9);
+    expect(playlist.songs).to.include(song4);
+    expect(playlist.songs).to.not.include(song5);
+    expect(playlist.songs).to.not.include(song6);
+    expect(playlist.songs).to.not.include(song7);
+    expect(playlist.songs).to.include(song8);
+    expect(playlist.songs).to.not.include(song9);
   });
 });
