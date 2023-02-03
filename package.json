@@ -1,14 +1,15 @@
-
 {
   "name": "app-chores",
-  "version": "0.0.1",
-  "description": "",
-  "main": "",
+  "version": "0.0.9",
+  "description": "Proyecto para la asignatura Infraestructura Virtual",
   "scripts": {
-	"start": "",
-    "test": ""
+    "test": "mocha"
   },
-  "keywords": [],
-  "author": "",
-  "license": "GNUGPLv3"
+  "author": "Carlos-SE",
+  "license": "GNUGPLv3",
+  "repository": "git@github.com:Carlos-SE/App-chores.git",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
 }
