@@ -2,14 +2,14 @@
 FROM node:lts-bullseye-slim
 
 # Buenas prácticas para la gestión de proyectos con Node.
-WORKDIR /app
+WORKDIR /application
 
 # Copiamos lo necesario para instalar las dependencias del proyecto.
 COPY package.json ./
 COPY yarn.lock ./
 
 # Cambiamos a un usuario no privilegiado para prevenir problemas de seguridad y permisos.
-RUN chown -R node:node /app
+RUN chown -R node:node /application
 USER node
 
 # Instalamos dependencias
