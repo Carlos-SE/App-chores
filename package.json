@@ -1,6 +1,6 @@
 {
   "name": "app-chores",
-  "version": "0.0.9",
+  "version": "0.5.0",
   "description": "Proyecto para la asignatura Infraestructura Virtual",
   "scripts": {
     "test": "mocha"
