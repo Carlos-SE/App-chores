@@ -1,5 +1,5 @@
 # Utilizamos como base la imagen oficial seleccionada.
-FROM node:lts-bullseye-slim
+FROM node:19-bullseye-slim
 
 # Buenas prácticas para la gestión de proyectos con Node.
 WORKDIR /app/test
@@ -9,8 +9,7 @@ COPY package.json ./
 COPY yarn.lock ./
 
 # Cambiamos a un usuario no privilegiado para prevenir problemas de seguridad y permisos.
-RUN chown -R node:node /app/test
-USER node
+RUN chown -R 1001:1001 /app/test
 
 # Instalamos dependencias
 RUN yarn install
