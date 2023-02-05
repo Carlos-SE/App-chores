@@ -38,6 +38,6 @@ Siguiendo las recomendaciones y buenas prácticas de Docker, es recomendable uti
 
 ## Decisión
 
-Tras haber investigado y comprobado pesos y incrementos de estos al instalar cosas necesarias como `Node`, `yarn` y demás paquetes, las imágenes que son más beneficiosas para el proyecto son las oficiales de `Node`. Entre las tres alternativas principales que nos ofrecen destacaremos `19-bullseye-slim` debido a que es una versión que optimiza el tamaño sin perder funcionalidad y `alpine`, que es un poco más ligera y tiene menos dependencias.
+Tras haber investigado y comprobado pesos e incrementos de estos al instalar cosas necesarias como `Node`, `yarn` y demás paquetes, las imágenes que son más beneficiosas para el proyecto son las oficiales de `Node`. Entre las tres alternativas principales que nos ofrecen destacaremos `19-bullseye-slim` debido a que es una versión que optimiza el tamaño sin perder funcionalidad y `alpine`, que es un poco más ligera y tiene menos dependencias.
 
 Para decidir entre estas dos alternativas nos vamos a basar en el mantenimiento que le dan a estas dos opciones, ya que la diferencia de peso tras instalar los paquetes necesarios es muy similar. Tenemos 53 `issues` abiertos con problemas presentes en la versión `alpine` ya que al minimizar tanto el peso de la imagen, usa `musl libc` en lugar de `glibc and friends`, aunque la gran mayoría de software sea compatible existen problemas de compatibilidad mientras que con `19-bullseye-slim` esto no pasa.
