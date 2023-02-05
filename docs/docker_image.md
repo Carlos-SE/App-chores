@@ -12,18 +12,13 @@ Ya que estamos en un proyecto basado en Node, la imagen debe estar diseñada par
 
 Siguiendo las recomendaciones y buenas prácticas de Docker, es recomendable utilizar imágenes oficiales como base o en su defecto, imágenes que provengan de desarrolladores verficados. Teniendo esto en cuenta, comenzaremos revisando las posibilidades que nos facilita `Node` para usar como imágenes base para nuestro contenedor.
 
-### node:lts-bullseye
-1. Tiene un mantenimiento constante y lo seguirá teniendo ya que es un producto `Long Term Support`, lo que quiere decir que le van a dar soporte y mantenimiento durante un tiempo prolongado.
+### node:19-bullseye
+1. Tiene un mantenimiento constante y se diferencia de su versión `Long Term Support` en que esta emplea la última versión de `Node`.
 2. Tiene un peso de 996 MB, lo cual es algo elevado.
 3. Esta imagen contiene varias herramientas que no nos interesan, por esto tiene ocupa un tamaño algo elevado. Lo bueno que tiene es que herramientas necesarias como `yarn` ya vienen instaladas por defecto y esta es necesaria para el proyecto.
 
-### node:lts-bullseye-slim
-1. Al igual que la opción anterior, tiene un mantenimiento constante y lo seguirá teniendo ya que es un producto `Long Term Support`, lo que quiere decir que le van a dar soporte y mantenimiento durante un tiempo prolongado.
-2. Tiene un peso de 245 MB, lo cual es bastante más reducido, siendo una buena alternativa a tener en cuenta.
-3. Esta imagen contiene muchas menos herramientas preinstaladas, debido a que esta versión de poco tamaño debe prescindir de ellas para no ocupar espacio innecesariamente. Al igual que en el caso anterior, `yarn` ya viene instalado por defecto así que no aumentaría el peso de la imagen por tener que descargarla.
-
 ### node:19-bullseye-slim
-1. Al contrario que con las imágenes anteriores, esta no está catalogada como `lts` pero esta imagen usa la última version de `Node`.
+1. Al igual que la imagen anterior, esta no está catalogada como `lts` pero esta imagen usa la última version de `Node`.
 2. Tiene un peso de 244 MB, lo cual es bastante reducido, siendo una buena alternativa a tener en cuenta.
 3. Esta imagen contiene muchas menos herramientas preinstaladas, debido a que esta versión de poco tamaño debe prescindir de ellas para no ocupar espacio innecesariamente. Al igual que en el caso anterior, `yarn` ya viene instalado por defecto así que no aumentaría el peso de la imagen por tener que descargarla.
 
@@ -43,8 +38,6 @@ Siguiendo las recomendaciones y buenas prácticas de Docker, es recomendable uti
 
 ## Decisión
 
-Tras haber investigado y comprobado pesos y incrementos de estos al instalar cosas necesarias como `Node`, `yarn` y demás paquetes, las imágenes que son más beneficiosas para el proyecto son las oficiales de `Node`. Entre las tres alternativas principales que nos ofrecen destacaremos `lts-bullseye-slim`, `19-bullseye-slim` debido a que es una versión que optimiza el tamaño sin perder funcionalidad y `alpine`, que es un poco más ligera y tiene menos dependencias.
+Tras haber investigado y comprobado pesos y incrementos de estos al instalar cosas necesarias como `Node`, `yarn` y demás paquetes, las imágenes que son más beneficiosas para el proyecto son las oficiales de `Node`. Entre las tres alternativas principales que nos ofrecen destacaremos `19-bullseye-slim` debido a que es una versión que optimiza el tamaño sin perder funcionalidad y `alpine`, que es un poco más ligera y tiene menos dependencias.
 
-Para decidir entre estas dos alternativas nos vamos a basar en el mantenimiento que le dan a estas dos opciones, ya que la diferencia de peso tras instalar los paquetes necesarios es muy similar. Tenemos 53 `issues` abiertos con problemas presentes en la versión `alpine` ya que al minimizar tanto el peso de la imagen, usa `musl libc` en lugar de `glibc and friends`, aunque la gran mayoría de software sea compatible existen problemas de compatibilidad mientras que con `lts-bullseye-slim` y `19-bullseye-slim` esto no pasa.
-
-Así que la decisión a tomar finalmente será **node:19-bullseye-slim**, debido a que entre las opciones `lts` y `19`, preferimos ajustarnos a la última versión de `Node`.
+Para decidir entre estas dos alternativas nos vamos a basar en el mantenimiento que le dan a estas dos opciones, ya que la diferencia de peso tras instalar los paquetes necesarios es muy similar. Tenemos 53 `issues` abiertos con problemas presentes en la versión `alpine` ya que al minimizar tanto el peso de la imagen, usa `musl libc` en lugar de `glibc and friends`, aunque la gran mayoría de software sea compatible existen problemas de compatibilidad mientras que con `19-bullseye-slim` esto no pasa.
