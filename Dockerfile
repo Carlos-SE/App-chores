@@ -5,7 +5,6 @@ FROM node:19-bullseye-slim
 WORKDIR /app/test
 
 # Copiamos lo necesario para instalar las dependencias del proyecto.
-COPY package.json ./
 COPY yarn.lock ./
 
 # Cambiamos a un usuario no privilegiado para prevenir problemas de seguridad y permisos.
