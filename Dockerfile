@@ -1,5 +1,5 @@
 # Utilizamos como base la imagen oficial seleccionada.
-FROM node:lts-bullseye-slim
+FROM node:19-bullseye-slim
 
 # Buenas prácticas para la gestión de proyectos con Node.
 WORKDIR /app/test
