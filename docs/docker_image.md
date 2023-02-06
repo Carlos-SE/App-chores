@@ -33,6 +33,11 @@ Siguiendo las recomendaciones y buenas prácticas de Docker, es recomendable uti
 2. Esta imagen pesa 898 MB, es bastante más elevado que las demás opciones.
 3. Esta imagen contiene muchas tecnologías y paquetes que no vamos a usar, así que genera demasiada deuda técnica.
 
+### bitnami/node
+1. Imagen que se mantiene correctamente, con actualizaciones frecuentes.
+2. Esta imagen pesa 712 MB, es bastante pesada en comparación a otras alternativas.
+3. Esta imagen contiene muchas tecnologías y paquetes que no vamos a usar, así que genera demasiada deuda técnica. Hay que mencionar que no está usando la última versión disponible de node.
+
 ### Imágenes `bare-bone`
 > Esta opción consiste en utilizar una imágen sin propósito específico, de un sistema operativo en particular dependiendo de la alternativa y sobre este ir añadiendo todas las dependencias necesarias para que se ajuste al proyecto en el que estamos trabajando. Se pueden llegar a considerar pero no están pensadas para trabajar con `Node` en concreto.  El problema de estas imágenes es que pese a normalmente poder encontrar versiones con tamaño muy reducido, hay que instalar muchos paquetes y el tamaño de la imagen aumenta tanto o más que otras imágenes como `node:alpine` o `node:lts-bullseye-slim` ya que no se han diseñado para optimizar las funcionalidades a este tipo de proyectos.
 
