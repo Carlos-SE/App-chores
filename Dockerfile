@@ -1,5 +1,9 @@
 # Utilizamos como base la imagen oficial seleccionada.
-FROM node:current-bullseye-slim
+FROM alpine:latest
+
+# Actualizamos repos e instalamos node y yarn
+RUN apk update \
+    && apk add curl nodejs yarn
 
 # Buenas prácticas para la gestión de proyectos con Node.
 WORKDIR /app/test
