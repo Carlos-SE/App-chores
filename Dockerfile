@@ -3,17 +3,18 @@ FROM alpine:latest
 
 # Actualizamos repos e instalamos node y yarn
 RUN apk update \
-    && apk add curl nodejs yarn
+    && apk add nodejs yarn
 
 # Buenas prácticas para la gestión de proyectos con Node.
 WORKDIR /app/test
 
 # Copiamos lo necesario para instalar las dependencias del proyecto.
-COPY package.json ./
-COPY yarn.lock ./
+COPY package.json yarn.lock ./
 
 # Cambiamos a un usuario no privilegiado para prevenir problemas de seguridad y permisos.
-RUN chown -R 1001:1001 /app/test
+RUN adduser -u 1001 -D node &&\
+    chown -R node:node /app/test
+USER node
 
 # Instalamos dependencias
 RUN yarn install
